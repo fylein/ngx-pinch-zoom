@@ -25,7 +25,6 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
-            "aot": true,
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -33,7 +32,13 @@
             "styles": [
               "src/styles.sass"
             ],
-            "scripts": []
+            "scripts": [],
+            "vendorChunk": true,
+            "extractLicenses": false,
+            "buildOptimizer": false,
+            "sourceMap": true,
+            "optimization": false,
+            "namedChunks": true
           },
           "configurations": {
             "production": {
@@ -99,19 +104,6 @@
             "scripts": []
           }
         },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "tsconfig.app.json",
-              "tsconfig.spec.json",
-              "e2e/tsconfig.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
-        },
         "e2e": {
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
@@ -126,46 +118,33 @@
         }
       }
     },
-    "ngx-pinch-zoom": {
+    "ngx13-pinch-zoom": {
       "projectType": "library",
-      "root": "projects/ngx-pinch-zoom",
-      "sourceRoot": "projects/ngx-pinch-zoom/src",
+      "root": "projects/ngx13-pinch-zoom",
+      "sourceRoot": "projects/ngx13-pinch-zoom/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "tsConfig": "projects/ngx-pinch-zoom/tsconfig.lib.json",
-            "project": "projects/ngx-pinch-zoom/ng-package.json"
+            "tsConfig": "projects/ngx13-pinch-zoom/tsconfig.lib.json",
+            "project": "projects/ngx13-pinch-zoom/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/ngx-pinch-zoom/tsconfig.lib.prod.json"
+              "tsConfig": "projects/ngx13-pinch-zoom/tsconfig.lib.prod.json"
             }
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/ngx-pinch-zoom/src/test.ts",
-            "tsConfig": "projects/ngx-pinch-zoom/tsconfig.spec.json",
-            "karmaConfig": "projects/ngx-pinch-zoom/karma.conf.js"
+            "main": "projects/ngx13-pinch-zoom/src/test.ts",
+            "tsConfig": "projects/ngx13-pinch-zoom/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx13-pinch-zoom/karma.conf.js"
           }
         },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "projects/ngx-pinch-zoom/tsconfig.lib.json",
-              "projects/ngx-pinch-zoom/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
-        }
       }
     }
-  },
-  "defaultProject": "ivypinchApp"
+  }
 }

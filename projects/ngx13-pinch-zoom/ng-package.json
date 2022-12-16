@@ -1,6 +1,6 @@
 {
   "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
-  "dest": "../../dist/ngx-pinch-zoom",
+  "dest": "../../dist/ngx13-pinch-zoom",
   "lib": {
     "entryFile": "src/public-api.ts"
   }

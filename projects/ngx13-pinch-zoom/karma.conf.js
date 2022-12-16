@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, '../../coverage/ngx-pinch-zoom'),
+      dir: require('path').join(__dirname, '../../coverage/ngx13-pinch-zoom'),
       subdir: '.',
       reporters: [
         { type: 'html' },

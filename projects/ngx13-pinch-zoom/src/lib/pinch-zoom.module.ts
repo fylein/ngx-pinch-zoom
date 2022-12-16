@@ -17,9 +17,6 @@ import { PinchZoomComponent } from './pinch-zoom.component';
     ],
     bootstrap: [
         
-    ],
-    entryComponents: [
-        PinchZoomComponent
     ]
 })
 export class PinchZoomModule { }

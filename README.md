@@ -1,6 +1,6 @@
 # Pinch zoom for Angular
 
-<img src="https://badgen.net/bundlephobia/min/ngx-pinch-zoom" />
+<img src="https://badgen.net/bundlephobia/min/ngx13-pinch-zoom" />
 
 The module provides opportunities for image zooming in, zooming out and positioning with use of gestures on a touch screen. 
 
@@ -12,12 +12,12 @@ Live demos and source code samples can be found on [home page](http://ivylab.spa
 
 Install the npm package.
 ```
-npm i ngx-pinch-zoom
+npm i ngx13-pinch-zoom
 ```
 
 Import module:
 ```ts
-import { PinchZoomModule } from 'ngx-pinch-zoom';
+import { PinchZoomModule } from 'ngx13-pinch-zoom';
 
 @NgModule({
     imports: [ PinchZoomModule ]

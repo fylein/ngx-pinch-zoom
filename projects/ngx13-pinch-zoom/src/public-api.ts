@@ -1,5 +1,5 @@
 /*
- * Public API Surface of ngx-pinch-zoom
+ * Public API Surface of ngx13-pinch-zoom
  */
 
 export * from './lib/interfaces';
