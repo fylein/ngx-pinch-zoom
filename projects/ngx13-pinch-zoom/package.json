@@ -1,16 +1,16 @@
 {
   "name": "ngx13-pinch-zoom",
-  "version": "2.5.5",
+  "version": "3.0.1",
   "description": "Pinch zoom component for Angular.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/drozhzhin-n-e/ngx13-pinch-zoom.git"
+    "url": "git+https://github.com/yksolanki9/ngx-pinch-zoom"
   },
   "author": {
-    "name": "Nikita Drozhzhin",
-    "email": "drozhzhin.n.e@gmail.com"
+    "name": "Yash Solanki",
+    "email": "yashsolanki1709@gmail.com"
   },
-  "homepage": "http://ivylab.space/pinch-zoom",
+  "homepage": "https://github.com/yksolanki9/ngx-pinch-zoom",
   "keywords": [
     "Angular",
     "Angular 2",

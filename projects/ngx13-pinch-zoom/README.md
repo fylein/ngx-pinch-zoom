@@ -1,21 +1,23 @@
 # Pinch zoom for Angular
 
-<img src="https://badgen.net/bundlephobia/min/ngx13-pinch-zoom" />
-
-The module provides opportunities for image zooming in, zooming out and positioning with use of gestures on a touch screen. 
+The module provides opportunities for image zooming in, zooming out and positioning with use of gestures on a touch screen.
 
 Live demos and source code samples can be found on [home page](http://ivylab.space/pinch-zoom).
 
-🔬️ Help make Pinch zoom better by [answering a few questions](https://docs.google.com/forms/d/e/1FAIpQLSfDW_yLcKTlRzhUy3PMAFMgmsmy9cNyeML8hQ8rOgM3PEIKGA/viewform?usp=sf_link).
+## Note
+
+This package is a fork of [ngx-pinch-zoom](https://www.npmjs.com/package/ngx-pinch-zoom) by [Nikita Drozhzhin](https://github.com/drozhzhin-n-e) with support for Angular 13.
 
 ## Installation
 
 Install the npm package.
+
 ```
 npm i ngx13-pinch-zoom
 ```
 
 Import module:
+
 ```ts
 import { PinchZoomModule } from 'ngx13-pinch-zoom';
 
@@ -25,11 +27,14 @@ import { PinchZoomModule } from 'ngx13-pinch-zoom';
 ```
 
 ## Usage
+
 For use, put your image inside the &lt;pinch-zoom&gt; container. Please, pay attention to the parameters of your viewport metatag. If you use Pinch Zoom, it is required to limit zooming of a web-page, by entering the following parameters: &lt;meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"&gt;.
 
 ```html
 <pinch-zoom>
+  <img src="path_to_image" />
     <img src="path_to_image" /> 
+  <img src="path_to_image" />
 </pinch-zoom>
 ```
 
@@ -64,13 +69,3 @@ For use, put your image inside the &lt;pinch-zoom&gt; container. Please, pay att
 | destroy()               | Unsubscribe from mouse events and touches, as well as remove added styles from the DOM tree. |
 
 See the full documentation and examples on the [home page](http://ivylab.space/pinch-zoom).
-
-## Author services
-
-Are you interested in this library but lacks features? [Write to the author](https://github.com/drozhzhin-n-e), he can do it for you.
-
-## Sponsors
-
-Tested using Browserstack
-
-[![Browserstack](http://ivylab.space/assets/img/browserstack-logo.png)](http://browserstack.com/)
